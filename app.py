@@ -62,7 +62,7 @@ with left:
         with c7: exercise = st.toggle("Active Exercise Habits", value=False)
         with c8: smoking  = st.toggle("Smoker", value=False)
 
-    with st.expander("🩺  Vitals & Lab Values", expanded=True):
+    with st.expander("  Vitals & Lab Values", expanded=True):
         c1, c2 = st.columns(2)
         with c1:
             bp           = st.number_input("Blood Pressure (mmHg)", 50, 300, 120)
@@ -130,7 +130,7 @@ with right:
         # ── Result card + animated heart ─────────────────────────────────────
         st.markdown(f"""
         <div class="result-card {rcss}">
-          <span class="heart-icon {hcls}">❤️</span>
+          <span class="heart-icon {hcls}"></span>
           <div>
             <div class="result-pct {txt_cls}">{probability:.1f}%</div>
             <div class="result-label {txt_cls}">{label}</div>
@@ -264,7 +264,7 @@ if st.session_state.history:
     st.divider()
     hd1, hd2 = st.columns([2, 1])
     with hd1:
-        st.markdown("###  Prediction History")
+        st.markdown("### 💾 Prediction History")
     with hd2:
         if st.button(" Clear History", use_container_width=True):
             st.session_state.history = []
@@ -354,4 +354,3 @@ if st.session_state.history:
                 showlegend=False,
             )
             st.plotly_chart(bar_fig, use_container_width=True, config={"displayModeBar": False})
-            
