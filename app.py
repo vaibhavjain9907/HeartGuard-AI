@@ -4,7 +4,14 @@ import joblib
 import plotly.graph_objects as go
 import plotly.express as px
 from datetime import datetime
+from pathlib import Path
 
+BASE_DIR = Path(__file__).resolve().parent
+
+MODEL_DIR = BASE_DIR / "model"
+STYLE_DIR = BASE_DIR / "styles"
+DATA_DIR = BASE_DIR / "data"
+ASSET_DIR = BASE_DIR / "assets"
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="Heart Risk Assessment",
@@ -13,20 +20,29 @@ st.set_page_config(
 )
 
 def load_css():
-    with open("styles.css") as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+    css_file = STYLE_DIR / "styles.css"
 
+    with open(css_file, "r", encoding="utf-8") as f:
+        st.markdown(
+            f"<style>{f.read()}</style>",
+            unsafe_allow_html=True
+        )
 load_css()
-# ── Load pipeline ─────────────────────────────────────────────────────────────
+
+# ---------------- Paths ---------------- #
+BASE_DIR = Path(__file__).resolve().parent
+MODEL_DIR = BASE_DIR / "model"
+
+# ---------------- Load ML Pipeline ---------------- #
 @st.cache_resource
 def load_pipeline():
-    return joblib.load("heart_pipeline.pkl")
+    return joblib.load(MODEL_DIR / "heart_pipeline.pkl")
 
 pipeline = load_pipeline()
-# ── Session state ─────────────────────────────────────────────────────────────
+
+# ---------------- Session State ---------------- #
 if "history" not in st.session_state:
     st.session_state.history = []
-
 
 from utils import compute_risk, sub_scores
 # ── Header ────────────────────────────────────────────────────────────────────
