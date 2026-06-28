@@ -142,7 +142,6 @@ Personalized Recommendations
 </p>
 
 <p align="center">
-  <img src="assets/screenshots/recommendation.png" alt="Recommendations" width="48%">
   <img src="assets/screenshots/analytics.png" alt="Analytics Dashboard" width="48%">
 </p>
 
