@@ -235,7 +235,7 @@ AI & Data Science Student
 
 GitHub: https://github.com/vaibhavjain9907
 
-LinkedIn: *(Add your LinkedIn profile)*
+LinkedIn: https://www.linkedin.com/in/vaibhavjain990/
 
 ---
 
