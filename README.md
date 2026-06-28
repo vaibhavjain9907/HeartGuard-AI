@@ -134,80 +134,44 @@ Personalized Recommendations
 * Real-time Inference
 
 ---
+# 📸 Application Preview
 
-# 📷 Screenshots
+<p align="center">
+  <img src="assets/screenshots/home.png" alt="Home Page" width="48%">
+  <img src="assets/screenshots/prediction.png" alt="Prediction Result" width="48%">
+</p>
 
-## 🏠 Home Page
-
-> *(Add screenshot here)*
-
-```markdown
-assets/screenshots/home.png
-```
-
----
-
-## 📊 Prediction Result
-
-> *(Add screenshot here)*
-
-```markdown
-assets/screenshots/prediction.png
-```
+<p align="center">
+  <img src="assets/screenshots/recommendation.png" alt="Recommendations" width="48%">
+  <img src="assets/screenshots/analytics.png" alt="Analytics Dashboard" width="48%">
+</p>
 
 ---
 
-## 💡 Recommendations
-
-> *(Add screenshot here)*
-
-```markdown
-assets/screenshots/recommendation.png
-```
-
----
-
-## 📈 Analytics Dashboard
-
-> *(Add screenshot here)*
-
-```markdown
-assets/screenshots/analytics.png
-```
-
----
-
-# 🎥 Demo
-
-> Add your application demo GIF here.
-
-```markdown
-assets/demo.gif
-```
 
 ---
 
 # 🚀 Installation
 
-Clone the repository
+### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/HeartGuard-AI.git
+git clone https://github.com/vaibhavjain9907/HeartGuard-AI.git
 ```
 
-Move into the project directory
+### 2️⃣ Navigate to the Project
 
 ```bash
 cd HeartGuard-AI
 ```
 
-Install dependencies
+### 3️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the application
+### 4️⃣ Launch the Application
 
 ```bash
 streamlit run app.py
@@ -215,40 +179,43 @@ streamlit run app.py
 
 ---
 
-# 📌 Future Improvements
+# 🔮 Future Roadmap
 
-* Explainable AI using SHAP
-* Enhanced Health Analytics
-* Improved Risk Visualizations
-* Model Comparison Dashboard
-* Advanced Medical Insights
-* PDF Report Generation
-* Better UI/UX
+* 🧠 Explainable AI with SHAP
+* 📊 Enhanced Health Analytics
+* 📈 Advanced Risk Visualizations
+* 📄 PDF Health Report Generation
+* ⚡ Model Performance Comparison
+* 🎨 Improved User Experience
+* ☁️ Cloud Deployment
 
 ---
 
 # 👨‍💻 Author
 
-**Vaibhav Jain**
+## **Vaibhav Jain**
 
 AI & Data Science Student
 
-GitHub: https://github.com/vaibhavjain9907
-
-LinkedIn: https://www.linkedin.com/in/vaibhavjain990/
+* 🐙 GitHub: https://github.com/vaibhavjain9907
+* 💼 LinkedIn: https://www.linkedin.com/in/vaibhavjain990/
 
 ---
 
 # ⭐ Support
 
-If you found this project helpful, consider giving it a ⭐ on GitHub. It helps others discover the project and motivates future improvements.
+If you found **HeartGuard AI** useful, consider giving this repository a ⭐.
+
+It helps the project reach more developers and motivates future improvements.
 
 ---
 
 <p align="center">
 
-**❤️ HeartGuard AI**
+### ❤️ HeartGuard AI
 
-*Predict • Analyze • Prevent*
+**Predict • Analyze • Prevent**
+
+Made with ❤️ using **Python • Streamlit • Scikit-Learn**
 
 </p>
